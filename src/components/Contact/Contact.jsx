@@ -30,13 +30,20 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form" id="contact">
+    <section id="contact">
+       <div className="contact-form" id="contact">
       {/* left side copy and paste from work section */}
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}
           <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
           <span>Contact me</span>
+          <span>You may contact us using the information below:</span>
+          <br/>
+          <span style={{fontSize:'.7rem'}}><b>Telephone No:</b> 6284934506</span>
+          <br/>
+          <span  style={{fontSize:'.7rem'}}><b>E-Mail ID:</b>
+rahulbhatt6935159@gmail.com</span>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
@@ -58,6 +65,8 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    </section>
+   
   );
 };
 

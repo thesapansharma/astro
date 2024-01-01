@@ -10,6 +10,13 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
+import Refund from "./components/RefundPolicy/RefundPolicy"
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -21,15 +28,30 @@ function App() {
         color: darkMode ? "white" : "",
       }}
     >
+     
+      <Router>
       <Navbar />
-      <Intro />
-      <Services />
-      <Experience />
-      <Works />
-      <Portfolio />
-      <Testimonial />
-      <Contact />
-      <Footer />
+                    <Routes>
+                        <Route
+                            exact
+                            path="/"
+                            element={<><Intro />
+                            <Services />
+                            <Works />
+                            <Testimonial />
+                            <Contact />
+                            </>}
+                        ></Route>
+                        <Route
+                            exact
+                            path="/refund-policy"
+                            element={<><Refund />
+                            </>}
+                        ></Route>
+                    </Routes>
+                
+            </Router>
+            <Footer />
     </div>
   );
 }

@@ -16,6 +16,7 @@
 .n-name {
   font-size: 1.3rem;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .n-right {
   flex: 1;
