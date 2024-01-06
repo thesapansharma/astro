@@ -10,7 +10,10 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
-import Refund from "./components/RefundPolicy/RefundPolicy"
+import Refund from "./components/RefundPolicy/RefundPolicy";
+import Privacy from "./components/privacy/Privacy";
+import Teamandcondition from "./components/teamandcondition/Teamandcondition";
+import Checkout from "./Checkout/Checkout";
 import {
   BrowserRouter as Router,
   Routes,
@@ -46,6 +49,24 @@ function App() {
                             exact
                             path="/refund-policy"
                             element={<><Refund />
+                            </>}
+                        ></Route>
+                        <Route
+                            exact
+                            path="/privacy-policy"
+                            element={<><Privacy />
+                            </>}
+                        ></Route>
+                        <Route
+                            exact
+                            path="/terms-and-conditions"
+                            element={<><Teamandcondition />
+                            </>}
+                        ></Route>
+                        <Route
+                            exact
+                            path="/Checkout"
+                            element={<><Checkout />
                             </>}
                         ></Route>
                     </Routes>

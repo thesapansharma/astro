@@ -44,6 +44,9 @@ const Contact = () => {
           <br/>
           <span  style={{fontSize:'.7rem'}}><b>E-Mail ID:</b>
 rahulbhatt6935159@gmail.com</span>
+<br/>
+<span style={{fontSize:'.7rem'}}><b>Address:</b> B14/417 ,  Ram nagar , hoshiarpur , Punjab
+Pin code 146001</span>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}

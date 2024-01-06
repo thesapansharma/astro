@@ -46,6 +46,7 @@ const Services = () => {
             emoji={basic}
             heading={"Basic of astrology"}
             detail={"Explore the fundamental principles of the zodiac, planetary influences, and the art of interpreting birth charts."}
+            price={"Rs.2,999"}
           />
         </motion.div>
         {/* second card */}
@@ -58,6 +59,7 @@ const Services = () => {
             emoji={advance}
             heading={"Advance Astrology"}
             detail={"Explore the spiritual dimensions of astrology, connecting the celestial with the earthly."}
+            price={"Rs.24,999"}
           />
         </motion.div>
         {/* 3rd */}
@@ -72,6 +74,7 @@ const Services = () => {
             detail={
               "Learn to decipher the unique messages embedded in the heart, head, life, and fate lines."
             }
+            price={"Rs.24,999"}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
